@@ -1,0 +1,61 @@
+.payment {
+  background-color: #fff;
+
+  &__container {
+    & > h1 {
+      text-align: center;
+      padding: 10px;
+      font-weight: 400;
+      background-color: rgb(234, 237, 237);
+      border-bottom: 1px solid lightgrey;
+
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__section {
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  &__title {
+    flex: 0.2;
+  }
+
+  &__address,
+  &__items,
+  &__details {
+    flex: 0.8;
+  }
+
+  &__details > form {
+    max-width: 400px;
+  }
+
+  &__priceContainer > h3 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__priceContainer > button {
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+    color: #111;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 2px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    width: 100%;
+  }
+}
+
+.cc__snippet {
+  margin-top: 20px;
+  font-weight: 800;
+}

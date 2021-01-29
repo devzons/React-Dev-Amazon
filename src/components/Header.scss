@@ -1,0 +1,81 @@
+$color-primary-dark: #131a21;
+$color-primary-pale: #22303e;
+$color-orange: #cd9042;
+
+.header {
+  height: 60px;
+  background-color: $color-primary-dark;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 18px 20px 0;
+  }
+
+  &__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  &__searchInput {
+    height: 12px;
+    padding: 9px;
+    width: 100%;
+  }
+
+  &__searchIcon {
+    padding: 5px;
+    margin-left: -1px;
+    height: 22px;
+    background-color: $color-orange;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+
+  &__optionTop {
+    font-size: 10px;
+  }
+
+  &__optionBottom {
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  &__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  &__cartIcon {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $color-orange;
+  }
+}
